@@ -5,6 +5,7 @@ on:
     branches: [ main ]
     paths:
       - "konnect/**/kong.yaml"
+  workflow_dispatch:    
 
 jobs:
   detect-changes:

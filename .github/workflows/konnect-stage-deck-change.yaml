@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "konnect/**/kong-from-oas.yaml"
-
+  workflow_dispatch:
 jobs:
   merge-deck-files:
     name: Merge `kong-from-oas.yaml` files

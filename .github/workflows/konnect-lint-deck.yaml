@@ -4,6 +4,13 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, edited, ready_for_review]
 
+    workflow_dispatch:
+    # inputs:
+    #   manual_file:
+    #     description: "Path to a specific OAS file to lint (e.g., konnect/my-api/openapi.yaml)"
+    #     required: false
+    #     default: ""  
+
 jobs:
   lint-deck: 
     runs-on: ubuntu-latest
